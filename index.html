@@ -116,7 +116,7 @@
             <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
             <hr class="hr-break">
             <div class="row">
-                <!-- first portfolio in the row -->
+                <!-- first portfolio in the row, React Project MATHventure -->
                 <div class="col-md-6 col-lg-4">
                     <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1" data-target="#modal1" data-toggle="modal">
                         <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -124,12 +124,23 @@
                                 <i class="fa fa-search-plus fa-3x"></i> 
                             </div>
                         </div>
-                        <img class="img-fluid portfolio-img" src="./img/portfolio/PunchingFist.jpg" alt="Fist to Five">
+                        <img class="img-fluid portfolio-img" src="./img/portfolio/mathventurecropped.jpg" alt="Fist to Five">
                     </a>
                 </div>
-                <!-- second Portfolio/Modal, hungry spectator -->
+                <!-- second Portfolio/Modal, fist-to-five -->
                 <div class="col-md-6 col-lg-4">
                     <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2" data-target="#modal2" data-toggle="modal">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid portfolio-img" src="./img/portfolio/PunchingFist.jpg" alt="">
+                    </a>
+                </div>
+                <!-- 3rd portfolio/modal, hungry spectator -->
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3" data-target="#modal3" data-toggle="modal">
                         <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                             <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -138,20 +149,20 @@
                         <img class="img-fluid portfolio-img" src="img/portfolio/Hungry-Spectator.png" alt="">
                     </a>
                 </div>
-                <!-- 3rd portfolio/modal, burger -->
-                <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3" data-target="#modal3" data-toggle="modal">
-                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid portfolio-img" src="img/portfolio/hamburger-cartoon.png" alt="">
-                    </a>
-                </div>
-                <!-- 4th portfolio/modal, video game -->
+                <!-- 4th portfolio/modal, Eat-Da-Burger -->
                 <div class="col-md-6 col-lg-4">
                     <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4" data-target="#modal4" data-toggle="modal">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/hamburger-cartoon.png" alt="">
+                    </a>
+                </div>
+                <!-- 5th portfolio/modal, Spongebob Friend Finder -->
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5" data-target="#modal5" data-toggle="modal">
                         <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                         <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                             <i class="fa fa-search-plus fa-3x"></i>
@@ -160,18 +171,7 @@
                         <img class="img-fluid" src="img/portfolio/spongebob.png" alt="">
                     </a>
                 </div>
-                <!-- 5th portfolio/modal, safe -->
-                <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5" data-target="#modal5" data-toggle="modal">
-                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/trainscheduler.png" alt="">
-                    </a>
-                </div>
-                <!-- 6th portfolio/modal, submarine -->
+                <!-- 6th portfolio/modal, train timer session -->
                 <div class="col-md-6 col-lg-4">
                     <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6" data-target="#modal6" data-toggle="modal">
                         <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -179,7 +179,7 @@
                             <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                         </div>
-                        <img class="img-fluid" src="img/portfolio/nba.png" alt="">
+                        <img class="img-fluid" src="img/portfolio/trainscheduler.png" alt="">
                     </a>
                 </div>
             </div>
@@ -213,8 +213,26 @@
 
     <!-- PORTFOLIO MODALS -->
 
-    <!-- Modal 1 -->
+    <!-- Modal 1, MATHventure -->
     <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-secondary text-uppercase mb-0 text-center">MATHventure</h2>
+                    <hr>
+                </div>
+                <div class="modal-body">
+                    <img src="./img/portfolio/mathventurecropped.jpg" alt="Punching fist">
+                    <p class="text-center modal-text">This app was created to assess the children on basic addition, subtraction, multiplication, and division problems</p>
+                    <p class="text-center modal-text">The technologies used in this project were: <strong>HTML, CSS, Javascript, MongoDB, Mongoose, Node.js, Express, Bootstrap, Axios, and React.js</strong>. </p>
+                    <a class="btn btn-success btn-lg rounded-pill portfolio-modal-dismiss" href="https://ancient-bastion-60090.herokuapp.com/" target="_blank"><i class="fas fa-child"></i>Checkout this project!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2, Fist-to-Five -->
+    <div class="modal" id="modal2" tabindex="-1">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -223,24 +241,24 @@
                 </div>
                 <div class="modal-body">
                     <img src="./img/portfolio/PunchingFist.jpg" alt="Punching fist">
-                    <p class="text-center modal-text">This app was created to assess the class about specific topics.</p>
+                    <p class="text-center modal-text">This app was created to assess a class about specific topics.</p>
                     <p class="text-center modal-text">The technologies used in this project were: <strong>HTML, CSS, Javascript, Sequelize, Node.js, Express, Bootstrap, Handlebars/Moustache</strong>. </p>
                     <a class="btn btn-success btn-lg rounded-pill portfolio-modal-dismiss" href="https://nameless-woodland-10898.herokuapp.com/" target="_blank"><i class="fas fa-child"></i>Checkout this project!</a>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Modal 2 -->
-    <div class="modal" id="modal2" tabindex="-1">
+    
+    <!-- Modal 3, Hungry Spectator -->
+    <div class="modal" id="modal3" tabindex="-1">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="text-secondary text-uppercase mb-0 text-center">The Hungry Spectator</h2>
+                    <h2 class="text-secondary text-uppercase mb-0 text-center">Hungry Spectator</h2>
                     <hr>
                 </div>
                 <div class="modal-body">
-                    <img src="./img/portfolio/Hungry-Spectator.png" alt="Punching fist">
+                    <img src="./img/portfolio/Hungry-Spectator.png" alt="Burger">
                     <p class="text-center modal-text">This app was created for people to find events and dining options in their area.</p>
                     <p class="text-center modal-text">The technologies used in this project were: <strong>HTML, CSS, Javascript, JQuery, AJAX, EatStreet and SeatGeek API, Firebase</strong>. </p>
                     <a class="btn btn-success btn-lg rounded-pill portfolio-modal-dismiss" href="https://derazmus.github.io/theHungrySpectator-group/" target="_blank"><i class="fas fa-child"></i>Checkout this project!</a>
@@ -248,9 +266,9 @@
             </div>
         </div>
     </div>
-    
-    <!-- Modal 3 -->
-    <div class="modal" id="modal3" tabindex="-1">
+
+    <!-- Modal 4, Eat-Da-Burger -->
+    <div class="modal" id="modal4" tabindex="-1">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -267,8 +285,8 @@
         </div>
     </div>
 
-    <!-- Modal 4, Friend Finder -->
-    <div class="modal" id="modal4" tabindex="-1">
+    <!-- Modal 5, Spongebob Friend Finder -->
+    <div class="modal" id="modal5" tabindex="-1">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -276,7 +294,7 @@
                     <hr>
                 </div>
                 <div class="modal-body">
-                    <img src="img/portfolio/spongebob.png" alt="Burger">
+                    <img src="img/portfolio/spongebob.png" alt="Spongebob">
                     <p class="text-center modal-text">This app asks the user to take a survey. Depending on the user's score, the survey will match a friend with the user.</p>
                     <p class="text-center modal-text">The technologies used in this project were: <strong>HTML, CSS, Bootstrap, Javascript, JQuery, AJAX, Express, Node.js</strong>. </p>
                     <a class="btn btn-success btn-lg rounded-pill portfolio-modal-dismiss" href="https://stormy-forest-79196.herokuapp.com/" target="_blank"><i class="fas fa-child"></i>Checkout this project!</a>
@@ -285,8 +303,8 @@
         </div>
     </div>
 
-    <!-- Modal 5, Train Scheduler -->
-    <div class="modal" id="modal5" tabindex="-1">
+    <!-- Modal 6, Train Scheduler -->
+    <div class="modal" id="modal6" tabindex="-1">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -294,28 +312,10 @@
                     <hr>
                 </div>
                 <div class="modal-body">
-                    <img src="img/portfolio/trainscheduler.png" alt="Burger">
+                    <img src="img/portfolio/trainscheduler.png" alt="Train">
                     <p class="text-center modal-text">This app allows a user to add a train to a current train schedule. The current train schedule will then take that added train and display the next arrival and how many minutes away the train is from the current time.</p>
                     <p class="text-center modal-text">The technologies used in this project were: <strong>HTML, CSS, Bootstrap, Javascript, JQuery, Firebase, Moment.js</strong>. </p>
                     <a class="btn btn-success btn-lg rounded-pill portfolio-modal-dismiss" href="https://tiongsonkj.github.io/Train-Scheduler/" target="_blank"><i class="fas fa-child"></i>Checkout this project!</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 6, NBA Trivia -->
-    <div class="modal" id="modal6" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="text-secondary text-uppercase mb-0 text-center">NBA Trivia</h2>
-                    <hr>
-                </div>
-                <div class="modal-body">
-                    <img src="img/portfolio/nba.png" alt="Burger">
-                    <p class="text-center modal-text">This app is a short NBA trivia game.</p>
-                    <p class="text-center modal-text">The technologies used in this project were: <strong>HTML, CSS, Javascript, JQuery</strong>. </p>
-                    <a class="btn btn-success btn-lg rounded-pill portfolio-modal-dismiss" href="https://tiongsonkj.github.io/TriviaGame/" target="_blank"><i class="fas fa-child"></i>Checkout this project!</a>
                 </div>
             </div>
         </div>
