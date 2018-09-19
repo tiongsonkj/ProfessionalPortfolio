@@ -1,0 +1,31 @@
+{
+  "name": "professionalportfolio",
+  "version": "1.0.0",
+  "description": "my professional portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiongsonkj/ProfessionalPortfolio.git"
+  },
+  "author": "Kelvin Tiongson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiongsonkj/ProfessionalPortfolio/issues"
+  },
+  "homepage": "https://github.com/tiongsonkj/ProfessionalPortfolio#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-command": "^0.1.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "jquery": "^3.3.1",
+    "live-server": "^1.2.0",
+    "node-sass": "^4.9.3"
+  }
+}

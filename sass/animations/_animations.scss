@@ -1,0 +1,43 @@
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		/*translate in x direction from left to right, positive value goes right, negative value goes left*/
+		transform: translateX(-100px);
+	}
+	
+	/*at 80% make it translate to the right 20px*/
+	80% {
+		transform: translateX(20px);
+		/*transform: rotate(180deg); => this will rotate the text 180 degrees*/
+	}
+
+	100% {
+		opacity: 1;
+		/*translate at 0 will make it look the way it looks now. */
+		transform: translate(0);
+	}
+}
+
+/*makes an animation called "moveInRight"
+	starts at 0%
+
+	100% is what happens to the animation when finished.
+*/
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		/*translate in x direction from left to right, positive value goes right, negative value goes left*/
+		transform: translateX(100px);
+	}
+	
+	/*at 80% make it translate to the right 20px*/
+	80% {
+		transform: translateX(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		/*translate at 0 will make it look the way it looks now. */
+		transform: translate(0);
+	}
+}

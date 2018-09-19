@@ -1,0 +1,5 @@
+@import "animations/animations";
+
+// want this to load last so that all animations and variables load first
+@import "pages/home";
+@import "pages/originalstyle";

@@ -1,0 +1,232 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    /*translate in x direction from left to right, positive value goes right, negative value goes left*/
+    transform: translateX(-100px);
+  }
+  /*at 80% make it translate to the right 20px*/
+  80% {
+    transform: translateX(20px);
+    /*transform: rotate(180deg); => this will rotate the text 180 degrees*/
+  }
+  100% {
+    opacity: 1;
+    /*translate at 0 will make it look the way it looks now. */
+    transform: translate(0);
+  }
+}
+
+/*makes an animation called "moveInRight"
+	starts at 0%
+
+	100% is what happens to the animation when finished.
+*/
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    /*translate in x direction from left to right, positive value goes right, negative value goes left*/
+    transform: translateX(100px);
+  }
+  /*at 80% make it translate to the right 20px*/
+  80% {
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    /*translate at 0 will make it look the way it looks now. */
+    transform: translate(0);
+  }
+}
+
+.heading-primary {
+  animation-name: moveInLeft;
+  animation-duration: 5s;
+  margin: 0;
+}
+
+.nav-link {
+  padding-top: 0;
+  padding-bottom: 15px;
+}
+
+.navbar-brand {
+  margin-left: -3%;
+}
+
+.navbar-collapse {
+  margin-right: -3%;
+}
+
+/* editing my main header pic */
+.main-img {
+  height: 300px;
+  border-radius: 50%;
+}
+
+/* *****************************
+    Navbar
+********************************* */
+#mainNav {
+  /* 3a3050 */
+  background-color: #fec639;
+  padding-top: 1 rem;
+  padding-bottom: 1 rem;
+  font-weight: 700;
+}
+
+.fa-dribbble {
+  color: black;
+}
+
+.navtext {
+  color: black;
+}
+
+#mainNav .navbar-nav {
+  margin-top: 1rem;
+  letter-spacing: 0.0625rem;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+/* *****************************
+    Jumbotron
+********************************* */
+.jumbotron {
+  color: white;
+  height: 60vmax;
+  background-image: url(../img/skyline-night.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.btn {
+  font-weight: 700;
+  border: none;
+  border-radius: 300px;
+  vertical-align: middle;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: goldenrod;
+}
+
+/* .hr-break {
+    border: none;
+    color: white;
+} */
+/* *****************************
+    About Me
+********************************* */
+#aboutme {
+  margin-top: 10rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.card {
+  margin-top: 5rem;
+}
+
+.card-header {
+  font-family: 'Raleway', sans-serif;
+}
+
+.card-body {
+  font-family: 'Raleway', sans-serif;
+  word-spacing: 5px;
+}
+
+#sklzcard {
+  box-shadow: 5px 10px 8px #888888;
+}
+
+/* *****************************
+    Portfolio
+********************************* */
+.portfolio {
+  margin-top: 200px;
+  margin-bottom: -15px;
+}
+
+.portfolio .portfolio-item {
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  margin-bottom: 15px;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0;
+  background-color: goldenrod;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+  /* when you hover over it the background will change because of opacity */
+  opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+
+.portfolio-img {
+  height: 252px;
+}
+
+/* *****************************
+    Contact
+********************************* */
+#contact {
+  margin-top: 200px;
+  margin-bottom: -15px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* *****************************
+    modals
+********************************* */
+.modal-header {
+  margin: auto;
+}
+
+.modal-body img {
+  display: block;
+  height: 300px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-body a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.modal-text {
+  font-size: 20px;
+  padding: 15px;
+  padding-top: 30px;
+}
+
+.tech-used {
+  font-style: bold;
+}
+
+.modal-img {
+  height: 300px;
+}
