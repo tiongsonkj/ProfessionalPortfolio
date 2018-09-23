@@ -34,6 +34,12 @@
         padding-top: 40px;
         padding-bottom: 15px;
     }
+
+    .portfolio-img {
+        @media screen and (max-width: 767px) {
+            width:  100%;
+        }
+    }
 }
 
 // contact me section
@@ -45,6 +51,35 @@
 
     form {
         width: 400px;
+    
+        @media screen and (max-width: 415px) {
+            width: auto;
+        }
     }
+}
+
+// modal section
+
+.modal-body {
+
+    // modal img
+    img {
+        @media screen and (max-width: 991px) {
+            width: 60% !important;
+        }
+
+        @media screen and (max-width: 540px) {
+            width: 85% !important;
+        }
+    }
+
+    // modal button
+    a {
+        @media screen and (max-width: 478px) {
+            min-width: 256px;
+        }
+    }
+    
+    
 }
 

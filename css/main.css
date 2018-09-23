@@ -74,6 +74,12 @@
   padding-bottom: 15px;
 }
 
+@media screen and (max-width: 767px) {
+  #portfolio .portfolio-img {
+    width: 100%;
+  }
+}
+
 #contact {
   background-color: #333333;
   color: #fec639;
@@ -83,6 +89,30 @@
 
 #contact form {
   width: 400px;
+}
+
+@media screen and (max-width: 415px) {
+  #contact form {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .modal-body img {
+    width: 60% !important;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .modal-body img {
+    width: 85% !important;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .modal-body a {
+    min-width: 256px;
+  }
 }
 
 /* editing my main header pic */
@@ -242,7 +272,7 @@ hr {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 60%;
 }
 
 .modal-text {
