@@ -53,6 +53,72 @@
   margin-left: -3%;
 }
 
+@media screen and (max-width: 991px) {
+  .navbar-brand {
+    margin-left: -10%;
+    padding-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .navbar-brand {
+    margin-left: -5%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-brand {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    margin-left: -10%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .navbar-brand {
+    margin-left: -5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-brand {
+    margin-left: 0;
+  }
+}
+
+.navbar-toggler {
+  margin-right: -5%;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-toggler {
+    margin-right: initial;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-toggler {
+    margin-right: -5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-toggler {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-item {
+    margin-left: -10%;
+    text-align: center;
+  }
+}
+
 .navbar-collapse {
   margin-right: -3%;
 }
@@ -63,6 +129,13 @@
   border-radius: 10%;
   padding: 10px;
   margin-top: -10px;
+}
+
+@media screen and (max-width: 991px) {
+  .custom-navlink {
+    border-radius: 0;
+    text-align: center;
+  }
 }
 
 #portfolio {

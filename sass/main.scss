@@ -1,4 +1,5 @@
-@import "animations/animations";
+@import "other/animations";
+@import "other/variables";
 
 // want this to load last so that all animations and variables load first
 @import "pages/home";
