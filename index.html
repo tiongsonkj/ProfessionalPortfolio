@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="./css/main.css">
 
     <!-- page script -->
-    <script src="./js/pageStyle.js"></script>
+    <!-- <script src="./js/pageStyle.js"></script> -->
+    <script src="./js/pageScroll.js"></script>    
 
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -34,7 +35,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navtext navbar-brand js-scroll-trigger" href="#bg"><i class="fab fa-dribbble fa-lg"></i> Kelvin Tiongson</a>
+            <a class="navtext navbar-brand js-scroll-trigger scroll" href="#bg"><i class="fab fa-dribbble fa-lg"></i> Kelvin Tiongson</a>
 
             <!-- this is the button for when the page shrinks (hamburger) -->
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -42,13 +43,13 @@
             <div class="navbar-collapse collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto justify-content-end">
                     <li class="navtext nav-item px-2">
-                        <a class="nav-link active" href="#aboutme">About</a>
+                        <a class="nav-link active scroll" id="aboutme-nav" href="#aboutme">About</a>
                     </li>
                     <li class="navtext nav-item px-2">
-                        <a class="nav-link active" href="#portfolio">Portfolio</a>
+                        <a class="nav-link active scroll" id="portfolio-nav" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="navtext nav-item">
-                        <a class="nav-link active" href="#contact">Contact</a>
+                        <a class="nav-link active scroll" id="contact-nav" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -116,6 +117,7 @@
         <div class="container">
             <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
             <hr class="hr-break">
+
             <div class="row">
                 <!-- first portfolio in the row, React Project DevConnector -->
                 <div class="col-md-6 col-lg-4">
@@ -192,6 +194,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
+                    <i class="far fa-envelope fa-8x"></i>
                     <h2 class="section-heading">Want to get in touch?!</h2>
                     <hr class="my-4">
                     <p class="mb-5">Want to start your project with me? Awesome, please send me an email and I will get back to you as soon as possible!</p>
@@ -203,11 +206,32 @@
                     <br>
                     <p>847-882-4986</p>
                 </div>  -->
-                <div class="col-lg-4 mx-auto text-center">
+                <!-- <div class="col-lg-4 mx-auto text-center">
                     <i class="far fa-envelope fa-8x"></i>
                     <br>
                     <p>kelvintiongson2018@u.northwestern.edu</p>
-                </div>
+                </div> -->
+            </div>
+            <div class="row">
+                <form class="mx-auto">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="email" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="email" class="form-control" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mx-auto mb-5">Submit</button>
+                </form>
             </div>
         </div>
     </section>

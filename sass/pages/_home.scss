@@ -18,3 +18,33 @@
     margin-right: -3%;
 }
 
+.custom-navlink {
+    background-color: black;
+    color: rgb(254, 198, 57) !important;
+    border-radius: 10%;
+    padding: 10px;
+    margin-top: -10px;
+}
+
+// portfolio section
+#portfolio {
+    padding-bottom: 50px;
+
+    #portfolio-firstrow {
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
+}
+
+// contact me section
+#contact {
+    background-color: #333333;
+    color: #fec639;
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+    form {
+        width: 400px;
+    }
+}
+

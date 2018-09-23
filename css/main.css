@@ -57,6 +57,34 @@
   margin-right: -3%;
 }
 
+.custom-navlink {
+  background-color: black;
+  color: #fec639 !important;
+  border-radius: 10%;
+  padding: 10px;
+  margin-top: -10px;
+}
+
+#portfolio {
+  padding-bottom: 50px;
+}
+
+#portfolio #portfolio-firstrow {
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+
+#contact {
+  background-color: #333333;
+  color: #fec639;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+#contact form {
+  width: 400px;
+}
+
 /* editing my main header pic */
 .main-img {
   height: 300px;
@@ -162,7 +190,7 @@ hr {
   position: relative;
   display: block;
   max-width: 25rem;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .portfolio .portfolio-item .portfolio-item-caption {
