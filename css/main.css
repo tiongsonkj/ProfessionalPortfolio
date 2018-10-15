@@ -71,6 +71,15 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+  .navigation__button {
+    height: 4rem;
+    width: 4rem;
+    top: 2rem;
+    right: 2rem;
+  }
+}
+
 .navigation__background {
   height: 5rem;
   width: 5rem;
@@ -81,6 +90,15 @@
   background-image: radial-gradient(gold, white);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .navigation__background {
+    height: 4rem;
+    width: 4rem;
+    top: 2rem;
+    right: 2rem;
+  }
 }
 
 .navigation__nav {
@@ -146,11 +164,23 @@
   margin-top: 2.5rem;
 }
 
+@media screen and (max-width: 767px) {
+  .navigation__icon {
+    margin-top: 2rem;
+  }
+}
+
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
   width: 3rem;
   height: 2px;
   background-color: black;
   display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 2rem;
+  }
 }
 
 .navigation__icon::before, .navigation__icon::after {
@@ -296,17 +326,37 @@
   }
 }
 
-#typedelete-section {
-  height: 40vmax;
-}
-
 .wrap {
   color: white;
-  font-size: 5rem;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 935px) {
+  .wrap {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrap {
+    font-size: 2rem;
+  }
 }
 
 #jumbo-text {
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  #jumbo-text {
+    margin-top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #jumbo-text h1:first-child {
+    font-size: 2rem;
+  }
 }
 
 #portfolio {
@@ -352,6 +402,13 @@
   #portfolio .port-div > a {
     text-align: center;
   }
+}
+
+#footer {
+  background-color: #fec639;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 991px) {
@@ -473,7 +530,7 @@ hr {
     Portfolio
 ********************************* */
 .portfolio {
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: -15px;
 }
 
@@ -538,6 +595,33 @@ hr {
 
 .modal-img {
   height: 300px;
+}
+
+#aboutmebody {
+  background-color: #333333;
+}
+
+#aboutme {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+}
+
+#skills {
+  margin-bottom: 100px;
+}
+
+.card-body {
+  height: 200px;
+}
+
+.card-body ul {
+  padding: 0;
+}
+
+.card-body ul li {
+  list-style-type: none;
+  text-align: center;
 }
 
 /* *****************************

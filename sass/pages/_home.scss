@@ -87,16 +87,31 @@
 }
 
 // type delete section
-#typedelete-section {
-    height: 40vmax;
-}
 .wrap {
     color: white;
-    font-size: 5rem;
+    font-size: 4rem;
+
+    @media screen and (max-width: 935px) {
+        font-size: 3rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 2rem;
+    }
 }
 
 #jumbo-text {
     text-align: center;
+
+    @media screen and (max-width: 767px) {
+        margin-top: 0 !important;
+    }
+
+    & h1:first-child {
+        @media screen and (max-width: 767px){
+            font-size: 2rem;
+        }
+    }
 }
 
 // portfolio section
@@ -141,6 +156,15 @@
     }
 }
 
+
+// footer
+#footer {
+    background-color: rgb(254, 198, 57);
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    // margin-top: 30px; 
+}
 
 
 // modal section

@@ -15,6 +15,13 @@
         box-shadow: 0 1rem 3rem rgba(black, .1);
         text-align: center;
         cursor: pointer;
+
+        @media screen and (max-width: 767px){
+            height: 4rem;
+            width: 4rem;
+            top: 2rem;
+            right: 2rem;
+        }
     }
 
     // this is the gold background of the navigation links
@@ -35,6 +42,13 @@
 
         // this allows the background to transition in and out of the page when you click it
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+        
+        @media screen and (max-width: 767px){
+            height: 4rem;
+            width: 4rem;
+            top: 2rem;
+            right: 2rem;
+        }
     }
 
     &__nav {
@@ -110,6 +124,10 @@
         position: relative;
         margin-top: 2.5rem;
 
+        @media screen and (max-width: 767px){
+            margin-top: 2rem;
+        }
+
         &,
         &::before,
         &::after {
@@ -117,6 +135,10 @@
             height: 2px;
             background-color: black;
             display: inline-block;
+
+            @media screen and (max-width: 767px){
+                width: 2rem;
+            }
         }
 
         &::before,

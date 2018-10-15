@@ -44,14 +44,11 @@
 .jumbotron {
     color: white;
     height: 40vmax;
-    // background-image: url(../img/skyline-night.jpg);
+    
+    // this fades out the background image
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/skyline-night.jpg');
     background-position: center center;
     background-size: cover;
-    // position: absolute;
-    // opacity: 0.2;
-    // filter: alpha(opacity=20);
-    // z-index: -1;
 }
 .btn-xl {
     padding: 1rem 2rem;
@@ -100,7 +97,7 @@ hr {
     Portfolio
 ********************************* */
 .portfolio {
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: -15px;
 }
 
