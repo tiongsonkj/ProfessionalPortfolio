@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+
+    <!-- page styling css -->
+    <link rel="stylesheet" href="./css/main.min.css">
+
+    <!-- page script -->
+    <!-- <script src="./js/pageStyle.js"></script> -->
+    <!-- <script src="./js/pageScroll.js"></script>     -->
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- tab Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/bballicon.png">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <!-- for navi-toggle connects with input id navi-toggle -->
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="./index.html" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="./aboutme.html" class="navigation__link">About Me</a></li>
+                <li class="navigation__item"><a href="./contact.html" class="navigation__link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="container" id="aboutme">
+        <img class="main-img img-fluid mb-5 d-block mx-auto" src="./img/WindyCityBulls.jpg" alt="image should be here">
+        <h1 class="text-center">Kelvin Tiongson</h1>
+        <hr class="hr-break">
+        <p class="text-center col-lg-8 mx-auto">Hello! My name is Kelvin Tiongson and I am the gentleman in the red sweater. I am a full stack developer who is passionate about technology. I currently reside in the northwest suburbs of Chicago.</p>
+        <p class="text-center col-lg-8 mx-auto">In my free time I continue to learn more about technology as much as I can whether thats growing my development skills, data science, or anything tech related. Aside from being a developer, I enjoy spending time with my family, reading, and exercising. I also enjoy watching and playing as much basketball as I can.</p>
+
+        <!-- <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card" id="sklzcard">
+                    <div class="card-header text-center bg-warning">
+                        Other Skills <i class="fas fa-wrench"></i>
+                    </div>
+                    <div class="card-body">
+                        <ol>
+                            <li>Team-Oriented</li>
+                            <li>Growth-Minded</li>
+                            <li>Self-Motivated</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card" id="sklzcard">
+                    <div class="card-header text-center bg-warning">
+                        Technical Skills <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="card-body">
+                        HTML, CSS, Javascript, JQuery, MySQL, Node.js, Express.js, Handlebars.js, Git/GitHub, AJAX, Firebase, Visual Studio Code, MongoDB, React.js, Redux.js, Python, PHP, WordPress, AEM
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

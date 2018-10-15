@@ -19,11 +19,11 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 
     <!-- page styling css -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 
     <!-- page script -->
     <!-- <script src="./js/pageStyle.js"></script> -->
-    <script src="./js/pageScroll.js"></script>    
+    <!-- <script src="./js/pageScroll.js"></script>     -->
 
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -33,84 +33,68 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
             <a class="navtext navbar-brand js-scroll-trigger scroll" href="#bg"><i class="fab fa-dribbble fa-lg"></i> Kelvin Tiongson</a>
 
-            <!-- this is the button for when the page shrinks (hamburger) -->
-            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <! this is the button for when the page shrinks (hamburger) -->
+            <!-- <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
             <div class="navbar-collapse collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto justify-content-end">
                     <li class="navtext nav-item px-2">
-                        <a class="nav-link active scroll" id="aboutme-nav" href="#aboutme">About</a>
+                        <a class="nav-link active scroll" id="aboutme-nav" href="./aboutme.html">About</a>
                     </li>
                     <li class="navtext nav-item px-2">
                         <a class="nav-link active scroll" id="portfolio-nav" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="navtext nav-item">
-                        <a class="nav-link active scroll" id="contact-nav" href="#contact">Contact</a>
+                        <a class="nav-link active scroll" id="contact-nav" href="./contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> --> 
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <!-- for navi-toggle connects with input id navi-toggle -->
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="./index.html" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="./aboutme.html" class="navigation__link">About Me</a></li>
+                <li class="navigation__item"><a href="./contact.html" class="navigation__link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- card header! -->
     <div class="jumbotron jumbotron-fluid" id="bg">
-        <div class="container my-auto">
-            <div class="row">
-                <div class="col-lg-10 mx-auto pt-5">
-                    <br>
-                    <br>
-                    <h1 class="heading-primary text-center text-uppercase"><strong>Welcome!</strong></h1>
-                    <hr>
+
+            <div id="typedelete-section" class="container my-auto">
+                    <div class="row">
+                        
+            
+                        <div id="jumbo-text" class="col-lg-12 mx-auto pt-5 mt-5">
+                            <h1>Hello, my name is Kelvin Tiongson.</h1>
+                            <h1>
+                                <p href="" class="typewrite" data-period="2000" data-type='[ "Web Developer.", "Front-End Developer.", "Back-End Developer.", "Software Developer.", "Problem Solver.", "Team Player." ]'>
+                                    <span class="wrap"></span>
+                                </p>
+                            </h1>
+                        </div>
+                        
+                    </div>
                 </div>
-                <div class="col-lg-8 mx-auto d-flex justify-content-center">
-                    <!-- <button type="button" class="btn btn-xl btn-warning text-uppercase" href="#aboutme">Learn More About Me</button> -->
-                </div>
-            </div>
-        </div>
     </div>
-
-    <!-- About Me Section -->
-    <div class="container" id="aboutme">
-        <img class="main-img img-fluid mb-5 d-block mx-auto" src="./img/WindyCityBulls.jpg" alt="image should be here">
-        <h1 class="text-center">Kelvin Tiongson</h1>
-        <hr class="hr-break">
-        <p class="text-center col-lg-8 mx-auto">Hello! My name is Kelvin Tiongson and I am the gentleman in the red sweater. I am a full stack developer who is passionate about technology. I currently reside in the northwest suburbs of Chicago.</p>
-        <p class="text-center col-lg-8 mx-auto">In my free time I continue to learn more about technology as much as I can whether thats growing my development skills, data science, or anything tech related. Aside from being a developer, I enjoy spending time with my family, reading, and exercising. I also enjoy watching and playing as much basketball as I can.</p>
-
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="card" id="sklzcard">
-                    <div class="card-header text-center bg-warning">
-                        Technical Skills <i class="fas fa-desktop"></i>
-                    </div>
-                    <div class="card-body">
-                        HTML, CSS, Javascript, JQuery, MySQL, Node.js, Express.js, Handlebars.js, Git/GitHub, AJAX, Firebase, Visual Studio Code, MongoDB, React.js, Redux.js, Python
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="card" id="sklzcard">
-                    <div class="card-header text-center bg-warning">
-                        Other Skills <i class="fas fa-wrench"></i>
-                    </div>
-                    <div class="card-body">
-                        <ol>
-                            <li>Team-Oriented</li>
-                            <li>Growth-Minded</li>
-                            <li>Self-Motivated</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <!-- Portfolio Section-->
     <section class="portfolio" id="portfolio">
@@ -119,9 +103,48 @@
             <hr class="hr-break">
 
             <div class="row">
-                <!-- first portfolio in the row, React Project DevConnector -->
-                <div class="col-md-6 col-lg-4">
+                <!-- first portfolio in the row, Frootloops -->
+                <div class="port-div col-md-6 col-lg-4">
                     <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1" data-target="#modal1" data-toggle="modal">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fa fa-search-plus fa-3x"></i> 
+                            </div>
+                        </div>
+                        <img class="img-fluid portfolio-img" src="./img/portfolio/frootloops1.png" alt="frootloops">
+                    </a>
+                    <p>Client Project: Leo Burnett</p>
+                    <a href="http://www.frootloops.com/en_US/home.html" target="_blank"><p>This site is currently live!</p></a>
+                </div>
+                <!-- second Portfolio/Modal, special k powering you -->
+                <div class="port-div col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2" data-target="#modal2" data-toggle="modal">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid portfolio-img" src="./img/portfolio/specialk1.png" alt="special k powering you">
+                    </a>
+                    <p>Client Project: Leo Burnett</p>
+                    <a href="https://www.specialk.com/en_US/powering-you.html" target="_blank"><p>This site is currently live!</p></a>
+                </div>
+                <!-- 3rd portfolio/modal, frosted miniwheats -->
+                <div class="port-div col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3" data-target="#modal3" data-toggle="modal">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid portfolio-img" src="img/portfolio/fmw1.png" alt="frosted miniwheats">
+                    </a>
+                    <p>Client Project: Leo Burnett</p>
+                    <a href="https://www.frostedminiwheats.com/en_US/our-products.html" target="_blank"><p>This site is currently live!</p></a>
+                </div>
+                <!-- 4th portfolio in the row, React Project DevConnector -->
+                <div class="port-div col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1" data-target="#modal4" data-toggle="modal">
                         <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                             <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                                 <i class="fa fa-search-plus fa-3x"></i> 
@@ -129,225 +152,157 @@
                         </div>
                         <img class="img-fluid portfolio-img" src="./img/portfolio/showcase.jpg" alt="DevConnector">
                     </a>
+                    <p>Personal Project: DevConnector</p>
+                    
                 </div>
-                <!-- second Portfolio/Modal, fist-to-five -->
-                <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2" data-target="#modal2" data-toggle="modal">
-                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid portfolio-img" src="./img/portfolio/PunchingFist.jpg" alt="">
-                    </a>
-                </div>
-                <!-- 3rd portfolio/modal, hungry spectator -->
-                <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3" data-target="#modal3" data-toggle="modal">
-                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid portfolio-img" src="img/portfolio/Hungry-Spectator.png" alt="">
-                    </a>
-                </div>
-                <!-- 4th portfolio/modal, Eat-Da-Burger -->
-                <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4" data-target="#modal4" data-toggle="modal">
-                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/hamburger-cartoon.png" alt="">
-                    </a>
-                </div>
-                <!-- 5th portfolio/modal, Spongebob Friend Finder -->
-                <div class="col-md-6 col-lg-4">
+                <!-- 5th portfolio/modal, Natours -->
+                <div class="port-div col-md-6 col-lg-4">
                     <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5" data-target="#modal5" data-toggle="modal">
                         <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                         <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                             <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                         </div>
-                        <img class="img-fluid" src="img/portfolio/spongebob.png" alt="">
+                        <img class="img-fluid portfolio-img" src="img/portfolio/hero.jpg" alt="natours">
                     </a>
+                    <p>Personal Project: Natours</p>
+                    
                 </div>
-                <!-- 6th portfolio/modal, train timer session -->
-                <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6" data-target="#modal6" data-toggle="modal">
+                <!-- 6th portfolio/modal, hungry spectator -->
+                <div class="port-div col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3" data-target="#modal6" data-toggle="modal">
                         <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                            <i class="fa fa-search-plus fa-3x"></i>
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
                         </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/trainscheduler.png" alt="">
+                        <img class="img-fluid portfolio-img" src="img/portfolio/Hungry-Spectator.png" alt="hungry spectator">
                     </a>
+                    <p>Personal Project: Hungry Spectator</p>
+                    
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->   
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <i class="far fa-envelope fa-8x"></i>
-                    <h2 class="section-heading">Want to get in touch?!</h2>
-                    <hr class="my-4">
-                    <p class="mb-5">Send me an email and I will get back to you as soon as possible!</p>
-                </div>
-            </div>
-            <div class="row">
-                <!-- <div class="col-lg-4 ml-auto text-center">
-                    <i class="fas fa-phone-volume fa-8x"></i>
-                    <br>
-                    <p>847-882-4986</p>
-                </div>  -->
-                <!-- <div class="col-lg-4 mx-auto text-center">
-                    <i class="far fa-envelope fa-8x"></i>
-                    <br>
-                    <p>kelvintiongson2018@u.northwestern.edu</p>
-                </div> -->
-            </div>
-            <div class="row">
-                <form class="mx-auto" method="post" name="contact_form" action="contact-form.php">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" class="form-control" id="name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" class="form-control" id="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="text" name="phone" class="form-control" id="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea class="form-control" name="message" id="message" rows="5"></textarea>
-                    </div>
-                    <input type="submit" value="Submit">
-                    <button type="submit" class="btn btn-primary mx-auto mb-5">Submit</button>
-                </form>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- PORTFOLIO MODALS -->
 
-    <!-- Modal 1, DevConnector -->
+    <!-- Modal 1, Frootloops -->
     <div class="modal" id="modal1" tabindex="-1">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="text-secondary text-uppercase mb-0 text-center">DevConnector</h2>
+                    <h2 class="text-secondary text-uppercase mb-0 text-center">Leo Burnett: Froot Loops</h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>                    
                     <hr>
                 </div>
                 <div class="modal-body">
-                    <img src="./img/portfolio/showcase.jpg" alt="showcase">
+                    <img src="./img/portfolio/frootloops1.png" alt="froot loops">
+                    <p class="text-center modal-text">This project was created while working with Leo Burnett. I developed this specific page and made the page mobile responsive.</p>
+                    <p class="text-center modal-text" style="padding-top: 0;">The technologies used in this project were: <strong>HTML, CSS, Javascript, JQuery, SASS, AEM</strong>. </p>
+                    <a class="btn btn-success btn-lg rounded-pill portfolio-modal-dismiss" href="http://www.frootloops.com/en_US/home.html" target="_blank"><i class="fas fa-child"></i>Checkout this project!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2, special k -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-secondary text-uppercase mb-0 text-center">Leo Burnett: Special K - Powering You</h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>                                        
+                    <hr>
+                </div>
+                <div class="modal-body">
+                    <img src="./img/portfolio/specialk3.png" alt="special k">
+                    <p class="text-center modal-text">This project was created while working with Leo Burnett. I developed the modal pop-ups for this page and made these modal pop-ups mobile responsive.</p>
+                    <p class="text-center modal-text" style="padding-top: 0;">The technologies used in this project were: <strong>HTML, CSS, Javascript, JQuery, SASS, AEM</strong>. </p>
+                    <a class="btn btn-success btn-lg rounded-pill portfolio-modal-dismiss" href="https://www.specialk.com/en_US/powering-you.html" target="_blank"><i class="fas fa-child"></i>Checkout this project!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 3, frosted miniwheats -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-secondary text-uppercase mb-0 text-center">Leo Burnett: Frosted Mini-Wheats</h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>                                        
+                    <hr>
+                </div>
+                <div class="modal-body">
+                    <img src="./img/portfolio/fmw2.png" alt="frosted mini-wheats">
+                    <p class="text-center modal-text">This project was created while working with Leo Burnett. I developed the main section of this page that contains the cereals.</p>
+                    <p class="text-center modal-text" style="padding-top: 0;">The technologies used in this project were: <strong>HTML, CSS, Javascript, JQuery, SASS, AEM</strong>. </p>
+                    <a class="btn btn-success btn-lg rounded-pill portfolio-modal-dismiss" href="https://www.frostedminiwheats.com/en_US/our-products.html" target="_blank"><i class="fas fa-child"></i>Checkout this project!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4, DevConnector -->
+    <div class="modal" id="modal4" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-secondary text-uppercase mb-0 text-center">DevConnector</h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>                    
+                    <hr>
+                </div>
+                <div class="modal-body">
+                    <img src="./img/portfolio/showcase.jpg" alt="devconnector">
                     <p class="text-center modal-text">A social network for software engineers and software, full-stack, back end, and front end developers.</p>
-                    <p class="text-center modal-text">The technologies used in this project were: <strong>HTML, CSS, Javascript, MongoDB, Mongoose, Node.js, Express, Bootstrap, React.js, and Redux.js</strong>. </p>
+                    <p class="text-center modal-text" style="padding-top: 0;">The technologies used in this project were: <strong>HTML, CSS, Javascript, MongoDB, Mongoose, Node.js, Express, Bootstrap, React.js, and Redux.js</strong>. </p>
                     <a class="btn btn-success btn-lg rounded-pill portfolio-modal-dismiss" href="https://cryptic-cliffs-82615.herokuapp.com/" target="_blank"><i class="fas fa-child"></i>Checkout this project!</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 2, Fist-to-Five -->
-    <div class="modal" id="modal2" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="text-secondary text-uppercase mb-0 text-center">Fist-To-Five</h2>
-                    <hr>
-                </div>
-                <div class="modal-body">
-                    <img src="./img/portfolio/PunchingFist.jpg" alt="Punching fist">
-                    <p class="text-center modal-text">This app was created to assess a class about specific topics.</p>
-                    <p class="text-center modal-text">The technologies used in this project were: <strong>HTML, CSS, Javascript, Sequelize, Node.js, Express, Bootstrap, Handlebars/Moustache</strong>. </p>
-                    <a class="btn btn-success btn-lg rounded-pill portfolio-modal-dismiss" href="https://nameless-woodland-10898.herokuapp.com/" target="_blank"><i class="fas fa-child"></i>Checkout this project!</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Modal 3, Hungry Spectator -->
-    <div class="modal" id="modal3" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="text-secondary text-uppercase mb-0 text-center">Hungry Spectator</h2>
-                    <hr>
-                </div>
-                <div class="modal-body">
-                    <img src="./img/portfolio/Hungry-Spectator.png" alt="Burger">
-                    <p class="text-center modal-text">This app was created for people to find events and dining options in their area.</p>
-                    <p class="text-center modal-text">The technologies used in this project were: <strong>HTML, CSS, Javascript, JQuery, AJAX, EatStreet and SeatGeek API, Firebase</strong>. </p>
-                    <a class="btn btn-success btn-lg rounded-pill portfolio-modal-dismiss" href="https://derazmus.github.io/theHungrySpectator-group/" target="_blank"><i class="fas fa-child"></i>Checkout this project!</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 4, Eat-Da-Burger -->
-    <div class="modal" id="modal4" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="text-secondary text-uppercase mb-0 text-center">Eat-Da-Burger</h2>
-                    <hr>
-                </div>
-                <div class="modal-body">
-                    <img src="img/portfolio/hamburger-cartoon.png" alt="Burger">
-                    <p class="text-center modal-text">This app allows the user to submit a burger to eat. Then if the burger was eaten, the user will click on the "Devour It" button. The purpose of this app was to get the back end speaking to the front end.</p>
-                    <p class="text-center modal-text">The technologies used in this project were: <strong>HTML, CSS, Javascript, JQuery, AJAX, MySQL, MVC, ORM, Express, Node.js, Handlebars/Moustache</strong>. </p>
-                    <a class="btn btn-success btn-lg rounded-pill portfolio-modal-dismiss" href="https://boiling-garden-75508.herokuapp.com/" target="_blank"><i class="fas fa-child"></i>Checkout this project!</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 5, Spongebob Friend Finder -->
+    <!-- Modal 5, Natours -->
     <div class="modal" id="modal5" tabindex="-1">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="text-secondary text-uppercase mb-0 text-center">Friend Finder</h2>
+                    <h2 class="text-secondary text-uppercase mb-0 text-center">Natours</h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>                                        
                     <hr>
                 </div>
                 <div class="modal-body">
-                    <img src="img/portfolio/spongebob.png" alt="Spongebob">
-                    <p class="text-center modal-text">This app asks the user to take a survey. Depending on the user's score, the survey will match a friend with the user.</p>
-                    <p class="text-center modal-text">The technologies used in this project were: <strong>HTML, CSS, Bootstrap, Javascript, JQuery, AJAX, Express, Node.js</strong>. </p>
-                    <a class="btn btn-success btn-lg rounded-pill portfolio-modal-dismiss" href="https://stormy-forest-79196.herokuapp.com/" target="_blank"><i class="fas fa-child"></i>Checkout this project!</a>
+                    <img src="img/portfolio/hero.jpg" alt="Lady on a cliff">
+                    <p class="text-center modal-text">This is a page that demonstrates the use of SASS.</p>
+                    <p class="text-center modal-text" id="#modal5-second-text" style="padding-top: 0;">The technologies used in this project were: <strong>HTML, CSS, SASS</strong>. </p>
+                    <a class="btn btn-success btn-lg rounded-pill portfolio-modal-dismiss" href="https://tiongsonkj.github.io/natours-css/" target="_blank"><i class="fas fa-child"></i>Checkout this project!</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 6, Train Scheduler -->
+    <!-- Modal 6, Hungry Spectator -->
     <div class="modal" id="modal6" tabindex="-1">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="text-secondary text-uppercase mb-0 text-center">Train Scheduler</h2>
+                    <h2 class="text-secondary text-uppercase mb-0 text-center">Hungry Spectator</h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>                    
                     <hr>
                 </div>
                 <div class="modal-body">
-                    <img src="img/portfolio/trainscheduler.png" alt="Train">
-                    <p class="text-center modal-text">This app allows a user to add a train to a current train schedule. The current train schedule will then take that added train and display the next arrival and how many minutes away the train is from the current time.</p>
-                    <p class="text-center modal-text">The technologies used in this project were: <strong>HTML, CSS, Bootstrap, Javascript, JQuery, Firebase, Moment.js</strong>. </p>
-                    <a class="btn btn-success btn-lg rounded-pill portfolio-modal-dismiss" href="https://tiongsonkj.github.io/Train-Scheduler/" target="_blank"><i class="fas fa-child"></i>Checkout this project!</a>
+                    <img src="./img/portfolio/Hungry-Spectator.png" alt="hungry spectator">
+                    <p class="text-center modal-text">This app was created for people to find events and dining options in their area.</p>
+                    <p class="text-center modal-text" style="padding-top: 0;">The technologies used in this project were: <strong>HTML, CSS, Javascript, JQuery, AJAX, EatStreet and SeatGeek API, Firebase</strong>. </p>
+                    <a class="btn btn-success btn-lg rounded-pill portfolio-modal-dismiss" href="https://derazmus.github.io/theHungrySpectator-group/" target="_blank"><i class="fas fa-child"></i>Checkout this project!</a>
                 </div>
             </div>
         </div>
     </div>
 </body>
 
-<!-- <script src="./js/email.js"></script>     -->
-
+<script src="./js/typedelete.js"></script>
 </html>

@@ -1,0 +1,20 @@
+/* *****************************
+    Contact
+********************************* */
+#contact {
+    background-color: #333333;
+    color: #fec639;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    margin-bottom: -15px;
+    font-family: 'Raleway', sans-serif;
+
+
+    form {
+        width: 400px;
+    
+        @media screen and (max-width: 415px) {
+            width: auto;
+        }
+    }
+}

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tiongsonkj/ProfessionalPortfolio#readme",
   "dependencies": {
+    "compass-mixins": "^0.12.10",
     "gulp": "^3.9.1",
     "gulp-command": "^0.1.2",
     "gulp-cssmin": "^0.2.0",

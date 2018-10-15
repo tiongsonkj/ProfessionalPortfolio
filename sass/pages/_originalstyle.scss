@@ -16,10 +16,14 @@
 
 }
 .fa-dribbble {
-    color: black;
+    color: rgb(254, 198, 57);
 }
 .navtext {
-    color: black;
+    color: rgb(254, 198, 57);
+
+    &:hover {
+        color: black;
+    }
 }
 #mainNav .navbar-nav {
     margin-top: 1rem;
@@ -39,10 +43,15 @@
 
 .jumbotron {
     color: white;
-    height: 60vmax;
-    background-image: url(../img/skyline-night.jpg);
+    height: 40vmax;
+    // background-image: url(../img/skyline-night.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/skyline-night.jpg');
     background-position: center center;
     background-size: cover;
+    // position: absolute;
+    // opacity: 0.2;
+    // filter: alpha(opacity=20);
+    // z-index: -1;
 }
 .btn-xl {
     padding: 1rem 2rem;
@@ -98,8 +107,7 @@ hr {
 .portfolio .portfolio-item {
     position: relative;
     display: block;
-    max-width: 25rem;
-    margin-bottom: 30px; 
+    max-width: 25rem; 
 }
 
 .portfolio .portfolio-item .portfolio-item-caption {
@@ -120,16 +128,6 @@ hr {
 
 .portfolio-img {
     height: 252px;
-}
-
-
-/* *****************************
-    Contact
-********************************* */
-#contact {
-    margin-top: 200px;
-    margin-bottom: -15px;
-    font-family: 'Raleway', sans-serif;
 }
 
 /* *****************************

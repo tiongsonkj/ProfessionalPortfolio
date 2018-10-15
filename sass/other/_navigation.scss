@@ -1,0 +1,163 @@
+.navigation {
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        background-color: white;
+        height: 5rem;
+        width: 5rem;
+        position: fixed;
+        top: 3rem;
+        right: 3rem;
+        border-radius: 50%;
+        z-index: 3000;
+        box-shadow: 0 1rem 3rem rgba(black, .1);
+        text-align: center;
+        cursor: pointer;
+    }
+
+    // this is the gold background of the navigation links
+    &__background {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+
+        // doesnt change position as we scroll the page. this is the nav button in the top right corner
+        position: fixed;
+        top: 3rem;
+        right: 3rem;
+
+        // radial-gradient starts in middle of element that goes out in all directions 
+        // vs. linear gradient where it goes from one corner to the other
+        background-image: radial-gradient(gold, white);
+        z-index: 1000;
+
+        // this allows the background to transition in and out of the page when you click it
+        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+
+    &__nav {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1500;
+        
+        // this will hide the navigation
+        opacity: 0;
+        width: 0;
+        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    &__list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    &__item {
+        margin: 1rem;
+
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 3rem;
+            font-weight: 300;
+            padding: 1rem 6rem;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, black 50%);
+            background-size: 220%;
+            transition: all .4s;
+
+            span {
+                margin-right: 1.5rem;
+                display: inline-block;
+            }
+        }
+        
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: gold;
+            transform: translateX(1rem);
+        }
+    }
+
+    // FUNCTIONALITY
+    // this allows the background to come in and out of the page with each click
+    &__checkbox:checked ~ &__background {
+        transform: scale(80);
+    }
+
+    // this shows the nav when the button is clicked
+    &__checkbox:checked ~ &__nav {
+        opacity: 1;
+        width: 100%;
+    }
+
+    // ICON
+    &__icon {
+        position: relative;
+        margin-top: 2.5rem;
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: black;
+            display: inline-block;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &::before {
+            top: -.8rem;
+        }
+
+        &::after {
+            top: .8rem;
+        }
+    }
+
+    // this moves the hamburger icon when you hover over it
+    &__button:hover &__icon::before {
+        top: -1rem;
+    }
+
+    &__button:hover &__icon::after {
+        top: 1rem;       
+    }
+
+    // this gets rid of the middle line of the hamburger when it turns into an X
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+
+    // this transitions the hamburger into an X
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+}

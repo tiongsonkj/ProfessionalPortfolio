@@ -41,3 +41,22 @@
 		transform: translate(0);
 	}
 }
+
+
+// glowing animation!
+@keyframes glowingText {
+	0% {
+		color: #484848;
+		text-shadow: none;
+	}
+
+	18% {
+		color: #484848;
+		text-shadow: none;
+	}
+
+	20% {
+		color: #fff900;
+		text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+	}
+}
